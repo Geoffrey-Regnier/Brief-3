@@ -3,138 +3,163 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8d08f0c793.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Mon CV interactif</title>
+    <script src="https://kit.fontawesome.com/8d08f0c793.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Indiana Geo et les aventuriers du code</title>
 </head>
 
 <body>
+    <!-- début header-->
     <header>
-        <img src="Image-brief-3/banniere.webp" alt="entete comprenant des références à la culture geek" id="banniere">
+        <img src="Images/banniere.jpg" alt="banniere paysage de jungle, deux explorateurs au centre" id="banniere">
     </header>
-    <main class="row">
+    <!-- fin de header-->
+    <!-- Début de div main -->
+    <main class="row columnreverse">
         <div id="perso">
-            <div class="column">
-                <img src="Image-brief-3/photoCV.webp" alt="photoducreateurdeceCV" id="me">
-                <h2>Geoffrey REGNIER</h2>
-                <p>Après 10 ans d'expérience dans la relation client en tant que Banquier Assureur, j'ai décidé de me reconvertir et de me lancer dans le monde du Développement Web.</p>
-            </div>
-            <div class="column">
-                <h2>Langues</h2>
-                <div id="drapeaux">
-                    <img src="Image-brief-3/France.webp" alt="drapeau français" class="pays">
-                    <img src="Image-brief-3/UK.webp" alt="drapeau du Royaume-Uni" class="pays">
-                    <img src="Image-brief-3/Spain.webp" alt="drapeau espagnol" class="pays">
+            <div class="column  marginbottom10">
+                <div class="justifycontentcenter  marginbottom10 justifycontent">
+                    <img src="Images/photoCV.webp" alt="photoducreateurdeceCV" class="rond" id="moi">
+                </div>
+                <div class="column justifycontentcenter  marginbottom10">
+                    <div class="text-align  marginbottom10">
+                        <h2>Geoffrey REGNIER</h2>
+                    </div>
+                    <div class="text-align background size-margin">
+                        <p>Après 10 ans d'expérience dans la relation client en tant que Banquier Assureur, j'ai décidé de me reconvertir et de me lancer dans le monde du Développement Web.</p>
+                    </div>
                 </div>
             </div>
             <div class="column">
-                <h2>Contacts</h2>
-                <div id="icone">
-                    <a href="tel:+33686812301"><i class="fa-sharp fa-solid fa-phone fa-2xl" style="color: #4193a6;"></i></a>
-                    <a href="mailto:gr.dev.web@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" style="color: #4193a6;"></i></a>
-                    <a href="https://www.linkedin.com/in/geoffrey-regnier" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl"style="color: #4193a6;"></i></a>
-                    <a href="https://github.com/Geoffrey-Regnier" target="_blank"><i class="fa-brands fa-square-github fa-2xl"style="color: #4193a6;"></i></a>
+                <div>
+                    <h2 class="justifycontentcenter">Langues</h2>
+                </div>
+                <div class=" column justifycontentcenter alignitems">
+                    <img src="Images/France.webp" alt="drapeau français" class="rond">
+                    <img src="Images/UK.webp" alt="drapeau du Royaume-Uni" class="rond">
+                    <img src="Images/Spain.webp" alt="drapeau espagnol" class="rond">
                 </div>
             </div>
-            <div class="column" id="passion">
-                <h2>Centres d'intérêts</h2>
-                <div id="interet">
-                    <img src="Image-brief-3/lens.webp" alt="Blason club de foot Racing Club de Lens" class="hobby">
-                    <img src="Image-brief-3/HOI4.jpg" alt="Illustration du jeu Europa Universalis IV" class="hobby">
-                    <img src="Image-brief-3/Napoleon.webp" alt="Napoleon au grand Saint Bernard" class="hobby">
-                    <img src="Image-brief-3/chuck.webp" alt="photo de chuck Noriss" class="hobby">
+            <div class="column">
+                <div class="marginbottom10">
+                    <h2 class="justifycontentcenter">Contacts</h2>
+                </div>
+                <div class="row justifycontentcenter space-evenly marginbottom10">
+                    <a href="mailto:gr.dev.web@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope" style="color: #ffd700;"></i>
+                      </a>                      
+                    <a href="tel:+33686812301" target="_blank">
+                        <i class="fa-solid fa-phone" style="color: #ffd700;"></i>
+                      </a>                      
+                    <a href="https://www.linkedin.com/in/geoffrey-regnier/" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: #ffd700;"></i>
+                      </a>                      
+                    <a href="https://github.com/Geoffrey-Regnier" target="_blank">
+                        <i class="fa-brands fa-square-github" style="color: #ffd700;"></i>
+                      </a>
+                      
+                </div>
+            </div>
+            <div class="column">
+                <div  class="text-align">
+                    <h2>Centres d'intérêts</h2>
+                </div>
+                <div class=" column alignitems">
+                    <img src="Images/lens.webp" alt="Blason club de foot Racing Club de Lens" class="rond">
+                    <img src="Images/HOI4.jpg" alt="Illustration du jeu Europa Universalis IV" class="rond">
+                    <img src="Images/Napoleon.webp" alt="Napoleon au grand Saint Bernard" class="rond">
+                    <img src="Images/chuck.webp" alt="photo de chuck Noriss" class="rond">
                 </div>
             </div>
         </div>
         <div id="pro">
-            <div class="column boite" id="competence">
-                <h3>Compétences</h3>
-                <div class="row">  
-                    <div id="hardskills">
-                        <h4>Hard Skills</h4>
-                            <div class="column">
-                                <p class="blanc">Développer la partie front-end d’une application web en intégrant les recommandations</p>
-                                <p class="blanc">Créer des points d’accès aux donnés</p>
-                                <p class="blanc">Maquetter une application</p>
-                                <p class="blanc">Réaliser une interface utilisateur web statique et adaptable</p>
-                                <p class="blanc">Créer une base de données dans un environnement headless CMS</p>
-                                <p class="blanc">Développer les composants d’accès aux données dans un environnement</p>
-                                <p class="blanc">headless CMS</p>
-                                <p class="blanc">HTML</p>
-                                <p class="blanc">CSS</p>
+            <div class="background">
+                <div class="column justifycontentcenter marginbottom10 alignitems">
+                    <h3 class="marginbottom10">Compétences</h3>
+                    <div class="row columnreverse">
+                        <div class="column width50">
+                            <h4 class="marginbottom10">Hard Skills</h4>
+                            <div class="column alignitems justifycontentcenter text-align">
+                                <p class="size-margin">Développer la partie front-end d’une application web en intégrant les
+                                    recommandations</p>
+                                <p class="size-margin">Créer des points d’accès aux donnés</p>
+                                <p class="size-margin">Maquetter une application</p>
+                                <p class="size-margin">Réaliser une interface utilisateur web statique et adaptable</p>
+                                <p class="size-margin">Créer une base de données dans un environnement headless CMS</p>
+                                <p class="size-margin">Développer les composants d’accès aux données dans un environnement</p>
+                                <p class="size-margin">headless CMS</p>
+                                <p class="size-margin">HTML</p>
+                                <p class="size-margin">CSS</p>
                             </div>
-                    </div>
-                    <div id="softskills">
-                        <h4>Soft Skills</h4>
-                        <div class="column">
-                            <p class="blanc">Calme</p>
-                            <p class="blanc">Réfléchi</p>
-                            <p class="blanc">Patient</p>
-                            <p class="blanc">Résilient</p>
-                            <p class="blanc">Travail en autonomie</p>
-                            <p class="blanc">Travail en équipe</p>
-                            <p class="blanc">Sens de l'écoute</p>
-                            <p class="blanc">Analyse besoin client</p>
-                            <p class="blanc">Maitrise de soi</p>
-                            <p class="blanc">Diplomatie</p>
+                        </div>
+                        <div class="width50 column alignitems">
+                            <h4 class="marginbottom10">Soft Skills</h4>
+                            <div class="column alignitems marginbottom10 justifycontentcenter text-align">
+                                <p class="size-margin">Calme</p>
+                                <p class="size-margin">Réfléchi</p>
+                                <p class="size-margin">Patient</p>
+                                <p class="size-margin">Résilient</p>
+                                <p class="size-margin">Travail en autonomie</p>
+                                <p class="size-margin">Travail en équipe</p>
+                                <p class="size-margin">Sens de l'écoute</p>
+                                <p class="size-margin">Analyse besoin client</p>
+                                <p class="size-margin">Maitrise de soi</p>
+                                <p class="size-margin">Diplomatie</p>
+                            </div>
                         </div>
                     </div>
-                </div> 
-            </div>
-            <div class="column boite" id="formations">
-                <h3>Formations</h3>
-                <div class="column">
-                    <p class="blanc blanc2">2023-Aujourd'hui Développeur Intégrateur d’Applications Web, Lille</p>
-                    <p class="blanc blanc2">2013-2014 Licence Profesionnelle Banque et Assurance, Lille</p>
-                    <p class="blanc blanc2">2011-2012 DUETI, échange universitaire, BC, Canada</p>
-                    <p class="blanc blanc2">2009-2011 DUT Techniques de Commercialisation, Auxerre</p>
                 </div>
-            </div>
-            <div class="column boite">
-                <h3>Expériences</h3>
-                <div class="column">
-                    <h5>2022-2023 Banque Populaire, Conseiller B to C en agence</h5>
-                    <p class="blanc blanc2">Gestion d'un portefeuille de 700 clients particulier, chargé d'entretenir, développer et fidéliser ce portefeuille.</p>
-                    <p class="blanc blanc2">Gestion des risques crédits et sécurité</p>
-                    <p class="blanc blanc2">Mise en place de dossier de crédits immobiliers et consommation</p>
-                    <p class="blanc blanc2">Commercilisation de service d'assurance des biens et des personnes</p>
-                    <p class="blanc blanc2">Gestion des réclamations</p>
-                    <p class="blanc blanc2">Suivi des demandes auprès des services internes</p>
-                    <p class="blanc blanc2">Initiation au digital pour les clients en fracture numérique</p>
+                <div class="column alignitems width100 marginbottom10">
+                    <div>
+                        <h3 class="marginbottom10">Formations</h3>
+                    </div>
+                    <div class="column justifycontentcenter marginbottom10">
+                        <p class="size-margin">2023-Aujourd'hui Développeur Intégrateur d’Applications Web, Lille</p>
+                        <p class="size-margin">2013-2014 Licence Profesionnelle Banque et Assurance, Lille</p>
+                        <p class="size-margin">2011-2012 DUETI, échange universitaire, BC, Canada</p>
+                        <p class="size-margin">2009-2011 DUT Techniques de Commercialisation, Auxerre</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <h5>2019-2021 Booking.com, Guest Customer Specialist en Call Center<h5>
-                    <p class="blanc blanc2">Gestion des appels entrants des utilisateurs des services de Booking.com</p>
-                    <p class="blanc blanc2">Chargé de gérer les demandes de modifications, annulations ou autres demandes dans le respect à lafois des clients mais égalements des partenaires (Etablissements)</p>
-                    <p class="blanc blanc2">Gestion des réclamations clients ou partenaires, chargé de trouver une solution satisfaisantes pourles deux camps.</p>
-                    <p class="blanc blanc2">Mise en place d'animation de réunion d'équipe, team building, jeux de cohésion.</p>
-                    <p class="blanc blanc2">Utilisation de l'anglais pour toutes les communications entre agents afin de faciliter la transmission d'informations.</p>
-                </div>
-                <div class="column">
-                    <h5>2015-2019 Société Générale, Conseiller B to C en Call Center</h5>
-                    <p class="blanc blanc2">Gestion des appels des clients redirigés vers le centre de relation client ou l'ayant contacté directement.</p>
-                    <p class="blanc blanc2">Mise en application des campagnes d'appels sortants crées par l'entreprise</p>
-                    <p class="blanc blanc2"> Gestion des risques crédits et sécurité</p>
-                    <p class="blanc blanc2">Mise en place de dossier de crédits consommation</p>
-                    <p class="blanc blanc2">Commercilisation de service d'assurance des biens et des personnes</p>
-                    <p class="blanc blanc2">Gestion des réclamations</p>
-                    <p class="blanc blanc2">Initiation au digital pour les clients en fracture numérique</p>
-                    <p class="blanc blanc2">Parrainage et formation des nouveaux arrivants</p>
-                    <p class="blanc blanc2">Animation des réunions d'équipe, annonce des résultats, team building</p>
+                <div class="column aligncenter marginbottom10">
+                    <h3 class="marginbottom10">Expériences</h3>
+                    <div class="column justfiycontent marginbottom10">
+                        <h4 class="marginbottom10 text-align">2022-2023 Banque Populaire, Conseiller B to C en agence</h4>
+                        <p class="size-margin">Gestion d'un portefeuille de 700 clients particulier, chargé d'entretenir,développer et fidéliser ce portefeuille.</p>
+                        <p class="size-margin">Gestion des risques crédits et sécurité</p>
+                        <p class="size-margin">Mise en place de dossier de crédits immobiliers et consommation</p>
+                        <p class="size-margin">Commercilisation de service d'assurance des biens et des personnes</p>
+                        <p class="size-margin">Gestion des réclamations</p>
+                        <p class="size-margin">Suivi des demandes auprès des services internes</p>
+                        <p class="marginbottom10 size">Initiation au digital pour les clients en fracture numérique</p>
+                        <h4 class="marginbottom10 text-align">2019-2021 Booking.com, Guest Customer Specialist en Call Center</h4>
+                        <p class="size-margin">Gestion des appels entrants des utilisateurs des services de Booking.com</p>
+                        <p class="size-margin">Chargé de gérer les demandes de modifications, annulations ou autres demandes dans le respect à lafois des clients mais égalements des partenaires (Etablissements)</p>
+                        <p class="size-margin">Gestion des réclamations clients ou partenaires, chargé de trouver une solution satisfaisantes pourles deux camps.</p>
+                        <p class="size-margin">Mise en place d'animation de réunion d'équipe, team building, jeux de cohésion.</p>
+                        <p class="marginbottom10 size">Utilisation de l'anglais pour toutes les communications entre agents afin de faciliter la transmission d'informations.</p>
+                        <h4 class="marginbottom10 text-align">2015-2019 Société Générale, Conseiller B to C en Call Center</h4>
+                        <p class="size-margin">Gestion des appels des clients redirigés vers le centre de relation clientou l'ayant contacté directement.</p>
+                        <p class="size-margin">Mise en application des campagnes d'appels sortants crées par l'entreprise</p>
+                        <p class="size-margin"> Gestion des risques crédits et sécurité</p>
+                        <p class="size-margin">Mise en place de dossier de crédits consommation</p>
+                        <p class="size-margin">Commercilisation de service d'assurance des biens et des personnes</p>
+                        <p class="size-margin">Gestion des réclamations</p>
+                        <p class="size-margin">Initiation au digital pour les clients en fracture numérique</p>
+                        <p class="size-margin">Parrainage et formation des nouveaux arrivants</p>
+                        <p class="size-margin">Animation des réunions d'équipe, annonce des résultats, team building</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="blanc fontsizecompteur">Nombre de visites :</div>
-        <div class="blanc fontsizecompteur" id="counter">0</div>
+        <p>Nombre de visites : <span id="compteur">0</span></p>
+        <script src="chemin/vers/ton/fichier.js"></script>
     </footer>
 </body>
-
+</html

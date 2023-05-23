@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var currentCount = localStorage.getItem("visitCount");
-
-  if (currentCount) {
-      currentCount = parseInt(currentCount) + 1;
-  } else {
-      currentCount = 1;
+window.onload = function() {
+  var compteurElement = document.getElementById("compteur");
+  var compteur = parseInt(compteurElement.innerText);
+  
+  // Vérifier si la valeur du compteur est valide
+  if (isNaN(compteur)) {
+    compteur = 0; // Si la valeur n'est pas valide, initialiser à 0
   }
-
-  document.getElementById("counter").textContent = currentCount;
-
-  localStorage.setItem("visitCount", currentCount.toString());
-});
+  
+  compteur++; // Incrémenter le compteur
+  
+  compteurElement.innerText = compteur; // Mettre à jour l'affichage du compteur
+};

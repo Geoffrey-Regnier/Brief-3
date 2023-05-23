@@ -1,344 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banniere {
+    width: 100%;
+    border-bottom: 3px solid #C88A00;
+}
+
+#counter {
+    font-size: 24px;
+    font-weight: bold;
+  }  
+
 body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding:0;
-  background-color: #4193a6;
-  flex-wrap: wrap;
-}
-
-/** les 3 éléments ayant le body comme parent **/
-
-header {
-  width: auto;
-}
-
-main {
-  width: auto;
+    background-image: url(Images/texturepierre.jpg);
+    max-width: 100%;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  font-family: 'Libre Baskerville', serif;
-  background-color: #66746e;
-  border-top: black solid 5px;;
-  width: 100%;
+    background-image: url(Images/highgrass.webp);
+    border-top: 3px solid #C88A00;
 }
 
-/** l'élèment ayant le header comme parent**/
-
-#banniere {
-  border-bottom: black solid 5px;
-  width: 100%;
-}
-
-/** les 2 éléments ayant le main comme parent **/
-
-#perso {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 35%;
-  background-color: rgb(199, 227, 240);
-  padding: 5%;
-  margin: 2%;
-  border: black solid 5px;
-  border-radius: 50px;
-  box-shadow: 10px 5px 5px black;
-}
-
-#pro {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  background-color: rgb(199, 227, 240);
-  padding:5%;
-  margin:2%;
-  border: black solid 5px;
-  border-radius: 50px;
-  box-shadow: 10px 5px 5px black;
-}
-
-/** les éléments contenus dans #perso utilisés **/
-
-#me {
-  border: black solid 5px;
-  border-radius: 50%;
-  box-shadow: 10px 5px 5px gray;
-  margin-bottom: 25%;
-  width: 100%;
-  object-fit: cover;
+h2, h3, h4 {
+    font-family: 'cinzel', serif;
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 h2 {
-  display: flex;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.5vw;
-  color: #4193a6;
-  width: 100%;
-  justify-content: center;
+    color:#FFD700;
 }
-
-p {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1vw;
-  width: 100%;
-}
-
-i {
-  justify-content: space-evenly;
-  font-size: 350%;
-}
-
-#icone {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#interet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#passion {
-  margin-top: 10%;
-}
-
-#drapeaux {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5%;
-  margin-bottom: 10%;
-}
-
-/** les éléments contenus dans #pro utilisés **/
 
 h3 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 2vw;
-  color: #e9cf9b;
-  text-align: center;
-}
-
-#hardskills {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+    color: #4C2F27;
 }
 
 h4 {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.8vw;
-  color: #e9cf9b;
-  text-align: center;
+    color: #8E645B;
 }
 
 h5 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.3vw;
-  color: #e9cf9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFD700;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
-#softskills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
+header {
+    display: flex;
+}
+
+p {
+    font-family: 'dancing script';
+    color:#333333;
+    font-style: italic;
+    text-shadow: 3px 0px 14px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.alignitems {
+    align-items: center;
+}
+
+.background {
+    background-color: #D7C59B;
+    margin: 5%;
+    padding: 10%;
+    border: 3px solid #C88A00;
+    border-radius: 50px;
 }
 
 .column {
+
     display: flex;
     flex-direction: column;
 }
 
-.pays {
+.justifycontentcenter {
     display: flex;
-    border: black solid 3px;
-    border-radius: 50%;
-    width: 20%;
-    box-shadow: 10px 5px 5px gray;
+    justify-content: center;
 }
+
+.marginbottom10{
+    margin-bottom: 10%;
+}
+
+.rond {
+    border: 3px solid #C88A00;
+    border-radius: 50%;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+} 
 
 .row {
     display: flex;
     flex-direction: row;
 }
 
-.hobby {
-    display: flex;
-    border: black solid 5px;
-    border-radius: 50%;
-    width: 70%;
-    margin-bottom: 20%;
-    box-shadow: 10px 5px 5px gray;   
+.size-margin {
+    margin-bottom: 5%;
 }
 
-.boite {
-    width: 80%;
-    background-color: #66746e;
-    padding-bottom: 5%;
-    padding-right: 10%;
-    padding-left: 10%;
-    border: black solid 5px;
-    border-radius: 50px;
-    box-shadow: 10px 5px 5px gray;
-    margin-top: 5%;
-}
-    
-.blanc {
-    color: #fffdfd;
+.space-evenly {
+    justify-content: space-evenly;
 }
 
-.fontsizecompteur {
-    font-size: 200%;
-}
-
-.fa-2xl {
-  font-size: 3em;
-  line-height: .03125em;
-  vertical-align: -0.1875em;
-  margin-top: 50%;
-}
-
-:any-link {
-  text-transform: none;
-  text-decoration: none;
-}
-
-
-@media only screen and (max-width: 1024px) {
-  
-  body {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    background-color:#4193a6;
-  }
-
-  header, main, footer {
-    width: 150%;
-  }
-
-  #competence {
-    margin-top: 1%;
-  }
-
-  #formations {
-    margin-top: 15%;
-    margin-bottom: 15%;
-  }
-
-  #hardskills {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #softskills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h2 {
-    display: flex;
-    font-family: 'Libre Baskerville', serif;
+.text-align {
     text-align: center;
-    margin-top: 30%;
-    margin-bottom: 30%;
-    font-size: 230%;
-    color: #4193a6;
-    text-shadow: 1px 1px 1px gray;
-  }
-
-  h3 {
-    display: flex;
-    font-family: 'Libre Baskerville', serif;
-    color: #e9cf9b;
-    margin-bottom: 1%;
-    padding: 0;
-    font-size: 6vw;
-    justify-content: center;
-    text-shadow: 4px 3px 1px black;
-  }
-
-  h4 {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Libre Baskerville', serif;
-    color: #e9cf9b;
-    text-shadow: 4px 3px 1px black;
-    padding: 0;
-    font-size: 5vw;
-    width: 100%;
-    text-align: center;
-  }
-
-  h5{
-    font-size: 5vm;
-  }
-
-  p {
-    display: flex;
-    font-family: 'Libre Baskerville', serif;
-  }
-
-  #perso, #pro {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    background-color: rgb(199, 227, 240);
-    border: black solid 3px;
-    border-radius: 50px;
-    box-shadow: 10px 5px 5px black;
-  }
-
-  
-
-  .blanc {
-    color: #fffdfd;
-    font-size: 3vw;
-    text-shadow: 4px 3px 1px black;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
 }
 
 
 
-.boite {
-  background-color: #66746e;
-  border: black solid 3px;
-  border-radius: 50px;
-  box-shadow: 10px 3px 5px gray;
-  margin: 0;
-  padding: 1%;
+
+
+@media (min-width: 1024px) {
+
+    #moi {
+        width: 80%;
+    }
+
+    h2 {
+        font-size : 4vw
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 2vw;
+    }
+
+    h5, #counter {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    #perso {
+        width: 30%;
+    }
+
+    #pro {
+        width: 70%;
+    }
+
+    .fa-solid {
+        font-weight: 900;
+        font-size: 4vw;
+    }
+   
+    .fa-brands {
+        font-weight: 900;
+        font-size: 4vw;
+
+    }
+
+    .width50 {
+        width:50%;
+    }
+
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-}
+@media (max-width: 1024px) {
 
-.row {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-}
+    h2 {
+        font-size : 12vw
+    }
+
+    h3 {
+        font-size: 10vw;
+    }
+
+    h4 {
+        font-size: 8vw;
+    }
+
+    h5, #counter {
+        font-size:10vw;
+    }
+
+    p {
+        font-size: 6vw;
+    }
+
+    .columnreverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+    .fa-solid {
+        font-weight: 900;
+        font-size: 16vw;
+    }
+   
+    .fa-brands {
+        font-weight: 900;
+        font-size: 16vw;
+
+    }
 
 }
